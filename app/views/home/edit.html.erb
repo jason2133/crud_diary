@@ -1,0 +1,9 @@
+<h1>글 수정을 위한 페이지란다 하하</h1>
+<p>글을 다 쓰고 수정을 누르렴~~</p>
+
+<form action="/home/update/<%=@post.id%>" method="post">
+  제목 : <input type="text" name="title" value="<%=@post.title%>"><br>
+  내용 : <input type="text" name="content" value="<%=@post.content%>"><br>
+  <input type="submit" value="수정">
+</form>
+

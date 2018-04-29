@@ -1,0 +1,19 @@
+<h1>나의 일기를 적어보자구나</h1>
+<a href="/home/new">글 쓰러가기</a>
+<br>
+<br>
+
+<% @posts.each do |x| %>
+    <%= x.id%> 번 게시물 :<br>
+제목 : <%= x.title%> <br>
+내용 : <%= x.content%> <br>
+<br>
+<a href="/home/show/<%=x.id%>">들어가보기   </a>
+<br>
+<a href="/home/destroy/<%=x.id%>">파 괴   </a>
+<br>
+<a href="/home/edit/<%=x.id%>">췌인지</a>
+<br>
+----------------------
+<br>
+<%end%>
